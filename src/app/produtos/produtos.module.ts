@@ -5,6 +5,7 @@ import { ProdutosRoutingModule } from './produtos-routing.module';
 import { ProdutosComponent } from './produtos.component';
 import { RouterModule } from '@angular/router';
 import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.co
   imports: [
     CommonModule,
     ProdutosRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ]
 })
 export class ProdutosModule { }

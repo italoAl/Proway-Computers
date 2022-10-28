@@ -9,21 +9,24 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
 import { RouterModule } from '@angular/router';
-import { ProdutosComponent } from './produtos/produtos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NaoEncontradoComponent
+    NaoEncontradoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
