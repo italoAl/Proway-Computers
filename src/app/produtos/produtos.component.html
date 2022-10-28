@@ -1,0 +1,18 @@
+<section class="product-list">
+    <!--ng for é uma diretiva-->
+    <div class="product-list__card" *ngFor="let produto of produtos">
+        <a class="product-list__link">
+            <img [src]="produto.imagem">
+            <h2 class="product-item__name">
+                Produto 01
+            </h2>
+            <p class="product-item__price">
+                R$ 0.00
+            </p>
+            <p class="product-item__price-description">
+                á vista
+            </p>
+            <button class="product-item__buy-button" type="button">comprar</button>
+        </a>
+    </div>
+</section>
