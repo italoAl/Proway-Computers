@@ -4,7 +4,8 @@ import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.componen
 
 const routes: Routes = [{ path: 'produtos', loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule) },
 { path: "", redirectTo: "produtos", pathMatch: "full" },
-{path: "**", component: NaoEncontradoComponent}
+{ path: 'carrinho', loadChildren: () => import('./carrinhos/carrinhos.module').then(m => m.CarrinhosModule) },
+{path: "**", component: NaoEncontradoComponent},
 ];
 
 @NgModule({

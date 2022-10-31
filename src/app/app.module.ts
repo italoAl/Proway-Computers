@@ -11,6 +11,7 @@ import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.componen
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { CarrinhosModule } from './carrinhos/carrinhos.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     CommonModule,
     RouterModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    CarrinhosModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
