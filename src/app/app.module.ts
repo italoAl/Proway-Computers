@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { CarrinhosModule } from './carrinhos/carrinhos.module';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CarrinhosModule } from './carrinhos/carrinhos.module';
     HeaderComponent,
     FooterComponent,
     NaoEncontradoComponent,
+    BarraPesquisaComponent,
   ],
   imports: [
     BrowserModule,
