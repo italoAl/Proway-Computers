@@ -5,6 +5,7 @@ import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.componen
 const routes: Routes = [{ path: 'produtos', loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule) },
 { path: "", redirectTo: "produtos", pathMatch: "full" },
 { path: 'carrinho', loadChildren: () => import('./carrinhos/carrinhos.module').then(m => m.CarrinhosModule) },
+{ path: 'contato', loadChildren: () => import('./contato/contato.module').then(m => m.ContatoModule) },
 {path: "**", component: NaoEncontradoComponent},
 ];
 
